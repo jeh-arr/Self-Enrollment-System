@@ -20,7 +20,7 @@
             id = TextBoxIdNumber.Text.Trim
             TextBoxIdNumber.Clear()
             TextBoxPassword.Clear()
-            Me.Hide()
+            Me.Close()
             Main.Show()
         Else
             TextBoxIdNumber.Clear()
