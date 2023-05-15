@@ -22,22 +22,34 @@ Partial Class LoginForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.ButtonLogin = New Guna.UI2.WinForms.Guna2Button()
         Me.TextBoxPassword = New Guna.UI2.WinForms.Guna2TextBox()
         Me.TextBoxIdNumber = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2MessageDialog1 = New Guna.UI2.WinForms.Guna2MessageDialog()
+        Me.TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
+        Me.PanelBackGround = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.RadioButton5 = New Guna.UI2.WinForms.Guna2CustomRadioButton()
+        Me.RadioButton4 = New Guna.UI2.WinForms.Guna2CustomRadioButton()
+        Me.RadioButton3 = New Guna.UI2.WinForms.Guna2CustomRadioButton()
+        Me.RadioButton2 = New Guna.UI2.WinForms.Guna2CustomRadioButton()
+        Me.RadioButton1 = New Guna.UI2.WinForms.Guna2CustomRadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel1.SuspendLayout()
+        Me.PanelBackGround.SuspendLayout()
+        Me.Guna2GroupBox1.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Guna2Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Guna2Panel1
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.DarkRed
+        Me.Guna2Panel1.BorderColor = System.Drawing.Color.Gold
+        Me.Guna2Panel1.Controls.Add(Me.TextBox1)
         Me.Guna2Panel1.Controls.Add(Me.ButtonLogin)
         Me.Guna2Panel1.Controls.Add(Me.TextBoxPassword)
         Me.Guna2Panel1.Controls.Add(Me.TextBoxIdNumber)
@@ -54,7 +66,10 @@ Partial Class LoginForm
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ButtonLogin.Animated = True
         Me.ButtonLogin.AutoRoundedCorners = True
+        Me.ButtonLogin.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonLogin.BorderColor = System.Drawing.Color.Gold
         Me.ButtonLogin.BorderRadius = 23
+        Me.ButtonLogin.BorderThickness = 2
         Me.ButtonLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.ButtonLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.ButtonLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -72,9 +87,8 @@ Partial Class LoginForm
         '
         Me.TextBoxPassword.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBoxPassword.AutoRoundedCorners = True
         Me.TextBoxPassword.BorderColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.TextBoxPassword.BorderRadius = 23
+        Me.TextBoxPassword.BorderRadius = 10
         Me.TextBoxPassword.BorderThickness = 2
         Me.TextBoxPassword.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxPassword.DefaultText = ""
@@ -83,10 +97,11 @@ Partial Class LoginForm
         Me.TextBoxPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.TextBoxPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.TextBoxPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBoxPassword.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxPassword.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.TextBoxPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TextBoxPassword.HoverState.BorderColor = System.Drawing.Color.Red
         Me.TextBoxPassword.Location = New System.Drawing.Point(101, 464)
+        Me.TextBoxPassword.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxPassword.Name = "TextBoxPassword"
         Me.TextBoxPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.TextBoxPassword.PlaceholderText = "Password"
@@ -98,9 +113,8 @@ Partial Class LoginForm
         '
         Me.TextBoxIdNumber.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBoxIdNumber.AutoRoundedCorners = True
         Me.TextBoxIdNumber.BorderColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.TextBoxIdNumber.BorderRadius = 23
+        Me.TextBoxIdNumber.BorderRadius = 10
         Me.TextBoxIdNumber.BorderThickness = 2
         Me.TextBoxIdNumber.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBoxIdNumber.DefaultText = ""
@@ -109,11 +123,12 @@ Partial Class LoginForm
         Me.TextBoxIdNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.TextBoxIdNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.TextBoxIdNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBoxIdNumber.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxIdNumber.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.TextBoxIdNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TextBoxIdNumber.HoverState.BorderColor = System.Drawing.Color.Red
         Me.TextBoxIdNumber.Location = New System.Drawing.Point(101, 384)
         Me.TextBoxIdNumber.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.TextBoxIdNumber.MaxLength = 6
         Me.TextBoxIdNumber.Name = "TextBoxIdNumber"
         Me.TextBoxIdNumber.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TextBoxIdNumber.PlaceholderText = "ID Nubmer"
@@ -121,39 +136,149 @@ Partial Class LoginForm
         Me.TextBoxIdNumber.Size = New System.Drawing.Size(261, 48)
         Me.TextBoxIdNumber.TabIndex = 1
         '
-        'Guna2PictureBox1
+        'TextBox1
         '
-        Me.Guna2PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TextBox1.DefaultText = ""
+        Me.TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TextBox1.Location = New System.Drawing.Point(116, 696)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TextBox1.PlaceholderText = ""
+        Me.TextBox1.SelectedText = ""
+        Me.TextBox1.Size = New System.Drawing.Size(200, 36)
+        Me.TextBox1.TabIndex = 4
+        '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        Me.Timer1.Interval = 8000
+        '
+        'Guna2BorderlessForm1
+        '
+        Me.Guna2BorderlessForm1.ContainerControl = Me
+        Me.Guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6R
+        Me.Guna2BorderlessForm1.TransparentWhileDrag = True
+        '
+        'PanelBackGround
+        '
+        Me.PanelBackGround.BackgroundImage = Global.Self_Enrollment_System.My.Resources.Resources.login_bg1
+        Me.PanelBackGround.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PanelBackGround.Controls.Add(Me.Guna2GroupBox1)
+        Me.PanelBackGround.Controls.Add(Me.Label1)
+        Me.PanelBackGround.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBackGround.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBackGround.Name = "PanelBackGround"
+        Me.PanelBackGround.Size = New System.Drawing.Size(1142, 881)
+        Me.PanelBackGround.TabIndex = 1
+        '
+        'Guna2GroupBox1
+        '
+        Me.Guna2GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2PictureBox1.BackgroundImage = Global.Self_Enrollment_System.My.Resources.Resources.umlogo
-        Me.Guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Guna2PictureBox1.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(0, 76)
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(462, 258)
-        Me.Guna2PictureBox1.TabIndex = 0
-        Me.Guna2PictureBox1.TabStop = False
+        Me.Guna2GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox1.BorderColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox1.Controls.Add(Me.RadioButton5)
+        Me.Guna2GroupBox1.Controls.Add(Me.RadioButton4)
+        Me.Guna2GroupBox1.Controls.Add(Me.RadioButton3)
+        Me.Guna2GroupBox1.Controls.Add(Me.RadioButton2)
+        Me.Guna2GroupBox1.Controls.Add(Me.RadioButton1)
+        Me.Guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox1.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox1.Location = New System.Drawing.Point(450, 778)
+        Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
+        Me.Guna2GroupBox1.Size = New System.Drawing.Size(249, 66)
+        Me.Guna2GroupBox1.TabIndex = 2
+        Me.Guna2GroupBox1.Text = "Guna2GroupBox1"
         '
-        'Guna2Panel2
+        'RadioButton5
         '
-        Me.Guna2Panel2.BackgroundImage = Global.Self_Enrollment_System.My.Resources.Resources.bglogin
-        Me.Guna2Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Guna2Panel2.Controls.Add(Me.Label1)
-        Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(1142, 881)
-        Me.Guna2Panel2.TabIndex = 1
+        Me.RadioButton5.CheckedState.BorderColor = System.Drawing.Color.Gold
+        Me.RadioButton5.CheckedState.BorderThickness = 0
+        Me.RadioButton5.CheckedState.FillColor = System.Drawing.Color.Gold
+        Me.RadioButton5.CheckedState.InnerColor = System.Drawing.Color.Gold
+        Me.RadioButton5.Location = New System.Drawing.Point(181, 23)
+        Me.RadioButton5.Name = "RadioButton5"
+        Me.RadioButton5.Size = New System.Drawing.Size(20, 20)
+        Me.RadioButton5.TabIndex = 4
+        Me.RadioButton5.Text = "Guna2CustomRadioButton5"
+        Me.RadioButton5.UncheckedState.BorderColor = System.Drawing.Color.White
+        Me.RadioButton5.UncheckedState.BorderThickness = 0
+        Me.RadioButton5.UncheckedState.FillColor = System.Drawing.Color.White
+        Me.RadioButton5.UncheckedState.InnerColor = System.Drawing.Color.White
         '
-        'Guna2MessageDialog1
+        'RadioButton4
         '
-        Me.Guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK
-        Me.Guna2MessageDialog1.Caption = Nothing
-        Me.Guna2MessageDialog1.Icon = Guna.UI2.WinForms.MessageDialogIcon.None
-        Me.Guna2MessageDialog1.Parent = Nothing
-        Me.Guna2MessageDialog1.Style = Guna.UI2.WinForms.MessageDialogStyle.[Default]
-        Me.Guna2MessageDialog1.Text = Nothing
+        Me.RadioButton4.CheckedState.BorderColor = System.Drawing.Color.Gold
+        Me.RadioButton4.CheckedState.BorderThickness = 0
+        Me.RadioButton4.CheckedState.FillColor = System.Drawing.Color.Gold
+        Me.RadioButton4.CheckedState.InnerColor = System.Drawing.Color.Gold
+        Me.RadioButton4.Location = New System.Drawing.Point(147, 23)
+        Me.RadioButton4.Name = "RadioButton4"
+        Me.RadioButton4.Size = New System.Drawing.Size(20, 20)
+        Me.RadioButton4.TabIndex = 3
+        Me.RadioButton4.Text = "Guna2CustomRadioButton4"
+        Me.RadioButton4.UncheckedState.BorderColor = System.Drawing.Color.White
+        Me.RadioButton4.UncheckedState.BorderThickness = 0
+        Me.RadioButton4.UncheckedState.FillColor = System.Drawing.Color.White
+        Me.RadioButton4.UncheckedState.InnerColor = System.Drawing.Color.White
+        '
+        'RadioButton3
+        '
+        Me.RadioButton3.CheckedState.BorderColor = System.Drawing.Color.Gold
+        Me.RadioButton3.CheckedState.BorderThickness = 0
+        Me.RadioButton3.CheckedState.FillColor = System.Drawing.Color.Gold
+        Me.RadioButton3.CheckedState.InnerColor = System.Drawing.Color.Gold
+        Me.RadioButton3.Location = New System.Drawing.Point(113, 23)
+        Me.RadioButton3.Name = "RadioButton3"
+        Me.RadioButton3.Size = New System.Drawing.Size(20, 20)
+        Me.RadioButton3.TabIndex = 2
+        Me.RadioButton3.Text = "Guna2CustomRadioButton3"
+        Me.RadioButton3.UncheckedState.BorderColor = System.Drawing.Color.White
+        Me.RadioButton3.UncheckedState.BorderThickness = 0
+        Me.RadioButton3.UncheckedState.FillColor = System.Drawing.Color.White
+        Me.RadioButton3.UncheckedState.InnerColor = System.Drawing.Color.White
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.CheckedState.BorderColor = System.Drawing.Color.Gold
+        Me.RadioButton2.CheckedState.BorderThickness = 0
+        Me.RadioButton2.CheckedState.FillColor = System.Drawing.Color.Gold
+        Me.RadioButton2.CheckedState.InnerColor = System.Drawing.Color.Gold
+        Me.RadioButton2.Location = New System.Drawing.Point(79, 23)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(20, 20)
+        Me.RadioButton2.TabIndex = 1
+        Me.RadioButton2.Text = "Guna2CustomRadioButton2"
+        Me.RadioButton2.UncheckedState.BorderColor = System.Drawing.Color.White
+        Me.RadioButton2.UncheckedState.BorderThickness = 0
+        Me.RadioButton2.UncheckedState.FillColor = System.Drawing.Color.White
+        Me.RadioButton2.UncheckedState.InnerColor = System.Drawing.Color.White
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.Checked = True
+        Me.RadioButton1.CheckedState.BorderColor = System.Drawing.Color.Gold
+        Me.RadioButton1.CheckedState.BorderThickness = 0
+        Me.RadioButton1.CheckedState.FillColor = System.Drawing.Color.Gold
+        Me.RadioButton1.CheckedState.InnerColor = System.Drawing.Color.Gold
+        Me.RadioButton1.Location = New System.Drawing.Point(45, 23)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(20, 20)
+        Me.RadioButton1.TabIndex = 0
+        Me.RadioButton1.Text = "Guna2CustomRadioButton1"
+        Me.RadioButton1.UncheckedState.BorderColor = System.Drawing.Color.White
+        Me.RadioButton1.UncheckedState.BorderThickness = 0
+        Me.RadioButton1.UncheckedState.FillColor = System.Drawing.Color.White
+        Me.RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.White
         '
         'Label1
         '
@@ -169,29 +294,58 @@ Partial Class LoginForm
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "UNIVERSITY OF MINDANAO"
         '
+        'Guna2PictureBox1
+        '
+        Me.Guna2PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2PictureBox1.BackgroundImage = Global.Self_Enrollment_System.My.Resources.Resources.umlogo
+        Me.Guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Guna2PictureBox1.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2PictureBox1.ImageRotate = 0!
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(0, 76)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(462, 258)
+        Me.Guna2PictureBox1.TabIndex = 0
+        Me.Guna2PictureBox1.TabStop = False
+        '
         'LoginForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1604, 881)
-        Me.Controls.Add(Me.Guna2Panel2)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.PanelBackGround)
         Me.Controls.Add(Me.Guna2Panel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "LoginForm"
+        Me.ShowIcon = False
+        Me.ShowInTaskbar = False
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.Text = "Login"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Guna2Panel1.ResumeLayout(False)
+        Me.PanelBackGround.ResumeLayout(False)
+        Me.PanelBackGround.PerformLayout()
+        Me.Guna2GroupBox1.ResumeLayout(False)
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Guna2Panel2.ResumeLayout(False)
-        Me.Guna2Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents PanelBackGround As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents TextBoxPassword As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents TextBoxIdNumber As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents ButtonLogin As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2MessageDialog1 As Guna.UI2.WinForms.Guna2MessageDialog
+    Friend WithEvents Guna2GroupBox1 As Guna.UI2.WinForms.Guna2GroupBox
+    Friend WithEvents RadioButton1 As Guna.UI2.WinForms.Guna2CustomRadioButton
+    Friend WithEvents RadioButton5 As Guna.UI2.WinForms.Guna2CustomRadioButton
+    Friend WithEvents RadioButton4 As Guna.UI2.WinForms.Guna2CustomRadioButton
+    Friend WithEvents RadioButton3 As Guna.UI2.WinForms.Guna2CustomRadioButton
+    Friend WithEvents RadioButton2 As Guna.UI2.WinForms.Guna2CustomRadioButton
+    Friend WithEvents TextBox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
     Friend WithEvents Label1 As Label
 End Class

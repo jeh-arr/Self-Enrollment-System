@@ -121,14 +121,29 @@
   <data name="69282263" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\for system\69282263.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="form1iconsmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\src\form1iconsmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="University_of_Mindanao_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\src\University_of_Mindanao_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gradeicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\src\gradeicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="form1iconsmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\src\form1iconsmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="login_bg3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\src\login_bg3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bglogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\src\bglogin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="studentinfobg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\src\studentinfobg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login_bg4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\src\login_bg4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login_bg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\src\login_bg2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="infoiconlarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\src\infoiconlarge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,8 +151,8 @@
   <data name="gradeiconlarge1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\src\gradeiconlarge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bglogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\src\bglogin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="login_bg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\src\login_bg1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gradeiconlarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\src\gradeiconlarge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,10 +175,7 @@
   <data name="be" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\for system\be.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ezgif.com-apng-to-gif" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\src\ezgif.com-apng-to-gif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="studentinfobg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\src\studentinfobg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="login_bg5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\src\login_bg5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
