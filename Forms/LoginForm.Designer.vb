@@ -27,7 +27,7 @@ Partial Class LoginForm
         Me.ButtonLogin = New Guna.UI2.WinForms.Guna2Button()
         Me.TextBoxPassword = New Guna.UI2.WinForms.Guna2TextBox()
         Me.TextBoxIdNumber = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.PanelBackGround = New Guna.UI2.WinForms.Guna2Panel()
@@ -38,18 +38,16 @@ Partial Class LoginForm
         Me.RadioButton2 = New Guna.UI2.WinForms.Guna2CustomRadioButton()
         Me.RadioButton1 = New Guna.UI2.WinForms.Guna2CustomRadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel1.SuspendLayout()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelBackGround.SuspendLayout()
         Me.Guna2GroupBox1.SuspendLayout()
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2Panel1
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.DarkRed
         Me.Guna2Panel1.BorderColor = System.Drawing.Color.Gold
-        Me.Guna2Panel1.Controls.Add(Me.TextBox1)
         Me.Guna2Panel1.Controls.Add(Me.ButtonLogin)
         Me.Guna2Panel1.Controls.Add(Me.TextBoxPassword)
         Me.Guna2Panel1.Controls.Add(Me.TextBoxIdNumber)
@@ -136,24 +134,19 @@ Partial Class LoginForm
         Me.TextBoxIdNumber.Size = New System.Drawing.Size(261, 48)
         Me.TextBoxIdNumber.TabIndex = 1
         '
-        'TextBox1
+        'Guna2PictureBox1
         '
-        Me.TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBox1.DefaultText = ""
-        Me.TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBox1.Location = New System.Drawing.Point(116, 696)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.TextBox1.PlaceholderText = ""
-        Me.TextBox1.SelectedText = ""
-        Me.TextBox1.Size = New System.Drawing.Size(200, 36)
-        Me.TextBox1.TabIndex = 4
+        Me.Guna2PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2PictureBox1.BackgroundImage = Global.Self_Enrollment_System.My.Resources.Resources.umlogo
+        Me.Guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Guna2PictureBox1.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2PictureBox1.ImageRotate = 0!
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(0, 76)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(462, 258)
+        Me.Guna2PictureBox1.TabIndex = 0
+        Me.Guna2PictureBox1.TabStop = False
         '
         'Timer1
         '
@@ -294,20 +287,6 @@ Partial Class LoginForm
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "UNIVERSITY OF MINDANAO"
         '
-        'Guna2PictureBox1
-        '
-        Me.Guna2PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2PictureBox1.BackgroundImage = Global.Self_Enrollment_System.My.Resources.Resources.umlogo
-        Me.Guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Guna2PictureBox1.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(0, 76)
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(462, 258)
-        Me.Guna2PictureBox1.TabIndex = 0
-        Me.Guna2PictureBox1.TabStop = False
-        '
         'LoginForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -324,10 +303,10 @@ Partial Class LoginForm
         Me.Text = "Login"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Guna2Panel1.ResumeLayout(False)
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelBackGround.ResumeLayout(False)
         Me.PanelBackGround.PerformLayout()
         Me.Guna2GroupBox1.ResumeLayout(False)
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -344,7 +323,6 @@ Partial Class LoginForm
     Friend WithEvents RadioButton4 As Guna.UI2.WinForms.Guna2CustomRadioButton
     Friend WithEvents RadioButton3 As Guna.UI2.WinForms.Guna2CustomRadioButton
     Friend WithEvents RadioButton2 As Guna.UI2.WinForms.Guna2CustomRadioButton
-    Friend WithEvents TextBox1 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
     Friend WithEvents Label1 As Label
