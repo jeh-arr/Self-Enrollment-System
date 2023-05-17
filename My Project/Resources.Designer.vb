@@ -153,9 +153,29 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property gradeiconsmall1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gradeiconsmall1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property infoiconlarge() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("infoiconlarge", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property infoiconsmall() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("infoiconsmall", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

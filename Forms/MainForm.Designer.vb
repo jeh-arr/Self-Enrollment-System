@@ -28,6 +28,9 @@ Partial Class Main
         Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
         Me.ButtonEnroll = New Guna.UI2.WinForms.Guna2ImageButton()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.ButtonGrades = New Guna.UI2.WinForms.Guna2ImageButton()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
         Me.ButtonInfo = New Guna.UI2.WinForms.Guna2ImageButton()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -36,16 +39,13 @@ Partial Class Main
         Me.ButtonLogout = New Guna.UI2.WinForms.Guna2Button()
         Me.LabelIdNumber = New System.Windows.Forms.Label()
         Me.LabelFullName = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
-        Me.ButtonGrades = New Guna.UI2.WinForms.Guna2ImageButton()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.TableLayoutPanel6.SuspendLayout()
+        Me.TableLayoutPanel5.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
-        Me.TableLayoutPanel5.SuspendLayout()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -143,7 +143,7 @@ Partial Class Main
         '
         Me.Label3.AutoSize = True
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(3, 220)
         Me.Label3.Name = "Label3"
         Me.Label3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -151,6 +151,54 @@ Partial Class Main
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Enroll Course"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TableLayoutPanel5
+        '
+        Me.TableLayoutPanel5.BackColor = System.Drawing.Color.Transparent
+        Me.TableLayoutPanel5.ColumnCount = 1
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel5.Controls.Add(Me.Label2, 0, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.ButtonGrades, 0, 0)
+        Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel5.Location = New System.Drawing.Point(580, 3)
+        Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
+        Me.TableLayoutPanel5.RowCount = 2
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.0!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(443, 275)
+        Me.TableLayoutPanel5.TabIndex = 1
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label2.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(3, 220)
+        Me.Label2.Name = "Label2"
+        Me.Label2.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label2.Size = New System.Drawing.Size(437, 55)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Student Grades"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'ButtonGrades
+        '
+        Me.ButtonGrades.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonGrades.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.ButtonGrades.CheckedState.ImageSize = New System.Drawing.Size(64, 64)
+        Me.ButtonGrades.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ButtonGrades.HoverState.ImageSize = New System.Drawing.Size(180, 180)
+        Me.ButtonGrades.Image = Global.Self_Enrollment_System.My.Resources.Resources.gradeiconlarge
+        Me.ButtonGrades.ImageOffset = New System.Drawing.Point(0, 0)
+        Me.ButtonGrades.ImageRotate = 0!
+        Me.ButtonGrades.ImageSize = New System.Drawing.Size(170, 170)
+        Me.ButtonGrades.Location = New System.Drawing.Point(0, 0)
+        Me.ButtonGrades.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonGrades.Name = "ButtonGrades"
+        Me.ButtonGrades.PressedState.ImageSize = New System.Drawing.Size(165, 165)
+        Me.ButtonGrades.Size = New System.Drawing.Size(443, 220)
+        Me.ButtonGrades.TabIndex = 0
+        Me.ButtonGrades.UseTransparentBackground = True
         '
         'TableLayoutPanel4
         '
@@ -211,7 +259,7 @@ Partial Class Main
         '
         Me.Label1.AutoSize = True
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(3, 220)
         Me.Label1.Name = "Label1"
         Me.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -261,72 +309,24 @@ Partial Class Main
         'LabelIdNumber
         '
         Me.LabelIdNumber.AutoSize = True
-        Me.LabelIdNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelIdNumber.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelIdNumber.ForeColor = System.Drawing.Color.White
         Me.LabelIdNumber.Location = New System.Drawing.Point(14, 55)
         Me.LabelIdNumber.Name = "LabelIdNumber"
-        Me.LabelIdNumber.Size = New System.Drawing.Size(104, 31)
+        Me.LabelIdNumber.Size = New System.Drawing.Size(105, 33)
         Me.LabelIdNumber.TabIndex = 1
         Me.LabelIdNumber.Text = "000000"
         '
         'LabelFullName
         '
         Me.LabelFullName.AutoSize = True
-        Me.LabelFullName.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelFullName.Font = New System.Drawing.Font("Tahoma", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelFullName.ForeColor = System.Drawing.Color.White
         Me.LabelFullName.Location = New System.Drawing.Point(12, 9)
         Me.LabelFullName.Name = "LabelFullName"
-        Me.LabelFullName.Size = New System.Drawing.Size(406, 46)
+        Me.LabelFullName.Size = New System.Drawing.Size(398, 48)
         Me.LabelFullName.TabIndex = 0
         Me.LabelFullName.Text = "LastName, FirstName"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(3, 220)
-        Me.Label2.Name = "Label2"
-        Me.Label2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label2.Size = New System.Drawing.Size(437, 55)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Student Grades"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TableLayoutPanel5
-        '
-        Me.TableLayoutPanel5.BackColor = System.Drawing.Color.Transparent
-        Me.TableLayoutPanel5.ColumnCount = 1
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel5.Controls.Add(Me.Label2, 0, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.ButtonGrades, 0, 0)
-        Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel5.Location = New System.Drawing.Point(580, 3)
-        Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
-        Me.TableLayoutPanel5.RowCount = 2
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.0!))
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel5.Size = New System.Drawing.Size(443, 275)
-        Me.TableLayoutPanel5.TabIndex = 1
-        '
-        'ButtonGrades
-        '
-        Me.ButtonGrades.BackColor = System.Drawing.Color.Transparent
-        Me.ButtonGrades.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.ButtonGrades.CheckedState.ImageSize = New System.Drawing.Size(64, 64)
-        Me.ButtonGrades.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ButtonGrades.HoverState.ImageSize = New System.Drawing.Size(180, 180)
-        Me.ButtonGrades.Image = Global.Self_Enrollment_System.My.Resources.Resources.gradeiconlarge
-        Me.ButtonGrades.ImageOffset = New System.Drawing.Point(0, 0)
-        Me.ButtonGrades.ImageRotate = 0!
-        Me.ButtonGrades.ImageSize = New System.Drawing.Size(170, 170)
-        Me.ButtonGrades.Location = New System.Drawing.Point(0, 0)
-        Me.ButtonGrades.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonGrades.Name = "ButtonGrades"
-        Me.ButtonGrades.PressedState.ImageSize = New System.Drawing.Size(165, 165)
-        Me.ButtonGrades.Size = New System.Drawing.Size(443, 220)
-        Me.ButtonGrades.TabIndex = 0
-        Me.ButtonGrades.UseTransparentBackground = True
         '
         'Main
         '
@@ -346,12 +346,12 @@ Partial Class Main
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel6.ResumeLayout(False)
         Me.TableLayoutPanel6.PerformLayout()
+        Me.TableLayoutPanel5.ResumeLayout(False)
+        Me.TableLayoutPanel5.PerformLayout()
         Me.TableLayoutPanel4.ResumeLayout(False)
         Me.TableLayoutPanel4.PerformLayout()
         Me.Guna2Panel2.ResumeLayout(False)
         Me.Guna2Panel2.PerformLayout()
-        Me.TableLayoutPanel5.ResumeLayout(False)
-        Me.TableLayoutPanel5.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

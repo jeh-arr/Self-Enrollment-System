@@ -5,7 +5,7 @@ Public Class LoginForm
 
 
 
-    Dim id As String
+
 
     Private Sub ButtonLogin_Click(sender As Object, e As EventArgs) Handles ButtonLogin.Click
         Connect()
@@ -21,7 +21,7 @@ Public Class LoginForm
             reader = .ExecuteReader
         End With
         If reader.Read Then
-            id = TextBoxIdNumber.Text.Trim
+
 
             GlobalData.StudentID = TextBoxIdNumber.Text.Trim
             TextBoxIdNumber.Clear()
