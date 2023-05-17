@@ -11,5 +11,6 @@ Module DataBaseConnection
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+
     End Sub
 End Module

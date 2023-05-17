@@ -7,11 +7,6 @@ Public Class LoginForm
 
     Dim id As String
 
-    Private Sub Background_Slider()
-
-
-
-    End Sub
     Private Sub ButtonLogin_Click(sender As Object, e As EventArgs) Handles ButtonLogin.Click
         Connect()
         query = "SELECT * FROM student WHERE studentid=@studentid AND password=@password"
@@ -27,14 +22,17 @@ Public Class LoginForm
         End With
         If reader.Read Then
             id = TextBoxIdNumber.Text.Trim
+
+            GlobalData.StudentID = TextBoxIdNumber.Text.Trim
             TextBoxIdNumber.Clear()
             TextBoxPassword.Clear()
-            Me.Close()
             Main.Show()
+            Me.Hide()
+
         Else
             TextBoxIdNumber.Clear()
             TextBoxPassword.Clear()
-            MsgBox("Wrong Credentials Po")
+            MsgBox("Wrong Credentials")
 
         End If
     End Sub
@@ -75,21 +73,14 @@ Public Class LoginForm
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         If RadioButton1.Checked Then
-
             RadioButton2.Checked = True
-
         ElseIf RadioButton2.Checked Then
-
             RadioButton3.Checked = True
-
         ElseIf RadioButton3.Checked Then
-
             RadioButton4.Checked = True
         ElseIf RadioButton4.Checked Then
-
             RadioButton5.Checked = True
         ElseIf RadioButton5.Checked Then
-
             RadioButton1.Checked = True
         End If
     End Sub

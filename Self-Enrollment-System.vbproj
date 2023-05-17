@@ -121,7 +121,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataBaseConnection.vb" />
+    <Compile Include="Modules\DataBaseConnection.vb" />
     <Compile Include="Forms\LoginForm.Designer.vb">
       <DependentUpon>LoginForm.vb</DependentUpon>
     </Compile>
@@ -141,6 +141,7 @@
     <Compile Include="Forms\StudentInfoForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Modules\GlobalData.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
