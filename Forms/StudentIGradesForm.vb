@@ -1,27 +1,23 @@
 ﻿Public Class StudentGradesForm
 
     Private Sub StudentInfoForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'MainPanel.BackColor = Color.FromArgb(150, 0, 0, 0)
-        'ButtonEdit.Show()
-        'ButtonConfirm.Hide()
+        MainPanel.BackColor = Color.FromArgb(150, 0, 0, 0)
+
         Connect()
 
-        query = "SELECT * FROM stdinfo where ID = @studentid"
 
+        query = "SELECT * FROM program"
         With command
-            .Connection = connection
             .CommandText = query
-            With .Parameters
-                .Clear()
-                .AddWithValue("studentid", GlobalData.StudentID)
-
-            End With
+            .Connection = connection
             reader = .ExecuteReader
-            If reader.Read Then
 
-
-            End If
         End With
+        'd.Rows.Clear()
+        While reader.Read
+            dgv1st1st.Rows.Add(reader("GE1"), reader(2), reader(3))
+        End While
+
     End Sub
 
 
