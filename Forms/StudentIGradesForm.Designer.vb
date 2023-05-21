@@ -29,17 +29,17 @@ Partial Class StudentGradesForm
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.ButtonBack = New Guna.UI2.WinForms.Guna2Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.MainPanel = New Guna.UI2.WinForms.Guna2Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.dgv1st1st = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel2.SuspendLayout()
@@ -85,6 +85,12 @@ Partial Class StudentGradesForm
         Me.Label1.Size = New System.Drawing.Size(361, 45)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "STUDENT GRADES"
+        '
+        'Guna2BorderlessForm1
+        '
+        Me.Guna2BorderlessForm1.ContainerControl = Me
+        Me.Guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6R
+        Me.Guna2BorderlessForm1.TransparentWhileDrag = True
         '
         'Guna2PictureBox1
         '
@@ -141,27 +147,11 @@ Partial Class StudentGradesForm
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "FIRST YEAR:"
         '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Tahoma", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(24, 54)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(278, 29)
-        Me.Label3.TabIndex = 1
-        Me.Label3.Text = "FIRST SEMESTER: (26.0)"
-        '
-        'Guna2BorderlessForm1
-        '
-        Me.Guna2BorderlessForm1.ContainerControl = Me
-        Me.Guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6R
-        Me.Guna2BorderlessForm1.TransparentWhileDrag = True
-        '
         'dgv1st1st
         '
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
         Me.dgv1st1st.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.dgv1st1st.BackgroundColor = System.Drawing.Color.Gray
+        Me.dgv1st1st.BackgroundColor = System.Drawing.Color.LightGray
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Tahoma", 24.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -170,7 +160,8 @@ Partial Class StudentGradesForm
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv1st1st.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.dgv1st1st.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv1st1st.ColumnHeadersHeight = 42
+        Me.dgv1st1st.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.dgv1st1st.ColumnHeadersVisible = False
         Me.dgv1st1st.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4})
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -182,23 +173,23 @@ Partial Class StudentGradesForm
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgv1st1st.DefaultCellStyle = DataGridViewCellStyle3
         Me.dgv1st1st.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.dgv1st1st.Location = New System.Drawing.Point(29, 86)
+        Me.dgv1st1st.Location = New System.Drawing.Point(29, 98)
         Me.dgv1st1st.Name = "dgv1st1st"
         Me.dgv1st1st.RowHeadersVisible = False
-        Me.dgv1st1st.Size = New System.Drawing.Size(917, 114)
+        Me.dgv1st1st.Size = New System.Drawing.Size(1067, 101)
         Me.dgv1st1st.TabIndex = 2
         Me.dgv1st1st.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.dgv1st1st.ThemeStyle.AlternatingRowsStyle.Font = Nothing
         Me.dgv1st1st.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
         Me.dgv1st1st.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
         Me.dgv1st1st.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
-        Me.dgv1st1st.ThemeStyle.BackColor = System.Drawing.Color.Gray
+        Me.dgv1st1st.ThemeStyle.BackColor = System.Drawing.Color.LightGray
         Me.dgv1st1st.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.dgv1st1st.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.dgv1st1st.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.dgv1st1st.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Tahoma", 24.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dgv1st1st.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.dgv1st1st.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv1st1st.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.dgv1st1st.ThemeStyle.HeaderStyle.Height = 42
         Me.dgv1st1st.ThemeStyle.ReadOnly = False
         Me.dgv1st1st.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
@@ -232,6 +223,16 @@ Partial Class StudentGradesForm
         Me.Column4.HeaderText = "Description"
         Me.Column4.Name = "Column4"
         Me.Column4.ReadOnly = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Tahoma", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(24, 54)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(278, 29)
+        Me.Label3.TabIndex = 1
+        Me.Label3.Text = "FIRST SEMESTER: (26.0)"
         '
         'StudentGradesForm
         '

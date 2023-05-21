@@ -26,6 +26,7 @@ Partial Class StudentInfoForm
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.ButtonBack = New Guna.UI2.WinForms.Guna2Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.MainPanel = New Guna.UI2.WinForms.Guna2Panel()
@@ -70,7 +71,7 @@ Partial Class StudentInfoForm
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBoxFname = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
+        Me.MySqlCommand1 = New MySql.Data.MySqlClient.MySqlCommand()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel2.SuspendLayout()
@@ -117,6 +118,12 @@ Partial Class StudentInfoForm
         Me.Label1.Size = New System.Drawing.Size(487, 45)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "STUDENT INFORMATION"
+        '
+        'Guna2BorderlessForm1
+        '
+        Me.Guna2BorderlessForm1.ContainerControl = Me
+        Me.Guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6R
+        Me.Guna2BorderlessForm1.TransparentWhileDrag = True
         '
         'Guna2PictureBox1
         '
@@ -219,7 +226,6 @@ Partial Class StudentInfoForm
         Me.TextBoxEaddress.Location = New System.Drawing.Point(241, 414)
         Me.TextBoxEaddress.Multiline = True
         Me.TextBoxEaddress.Name = "TextBoxEaddress"
-        Me.TextBoxEaddress.ReadOnly = True
         Me.TextBoxEaddress.Size = New System.Drawing.Size(298, 75)
         Me.TextBoxEaddress.TabIndex = 19
         Me.TextBoxEaddress.Text = "asdasdas asdasdas asdas asdas a dasda"
@@ -250,7 +256,6 @@ Partial Class StudentInfoForm
         Me.TextBoxAddress.Location = New System.Drawing.Point(241, 127)
         Me.TextBoxAddress.Multiline = True
         Me.TextBoxAddress.Name = "TextBoxAddress"
-        Me.TextBoxAddress.ReadOnly = True
         Me.TextBoxAddress.Size = New System.Drawing.Size(298, 75)
         Me.TextBoxAddress.TabIndex = 11
         '
@@ -261,7 +266,6 @@ Partial Class StudentInfoForm
         Me.TextBoxEcontact.Location = New System.Drawing.Point(241, 372)
         Me.TextBoxEcontact.MaxLength = 11
         Me.TextBoxEcontact.Name = "TextBoxEcontact"
-        Me.TextBoxEcontact.ReadOnly = True
         Me.TextBoxEcontact.Size = New System.Drawing.Size(298, 36)
         Me.TextBoxEcontact.TabIndex = 17
         '
@@ -322,7 +326,6 @@ Partial Class StudentInfoForm
         Me.TextBoxPhone.Location = New System.Drawing.Point(241, 44)
         Me.TextBoxPhone.MaxLength = 11
         Me.TextBoxPhone.Name = "TextBoxPhone"
-        Me.TextBoxPhone.ReadOnly = True
         Me.TextBoxPhone.Size = New System.Drawing.Size(298, 36)
         Me.TextBoxPhone.TabIndex = 7
         '
@@ -332,7 +335,6 @@ Partial Class StudentInfoForm
         Me.TextBoxErelation.Font = New System.Drawing.Font("Tahoma", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxErelation.Location = New System.Drawing.Point(241, 330)
         Me.TextBoxErelation.Name = "TextBoxErelation"
-        Me.TextBoxErelation.ReadOnly = True
         Me.TextBoxErelation.Size = New System.Drawing.Size(298, 36)
         Me.TextBoxErelation.TabIndex = 15
         '
@@ -342,7 +344,6 @@ Partial Class StudentInfoForm
         Me.TextBoxEmail.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxEmail.Location = New System.Drawing.Point(241, 90)
         Me.TextBoxEmail.Name = "TextBoxEmail"
-        Me.TextBoxEmail.ReadOnly = True
         Me.TextBoxEmail.Size = New System.Drawing.Size(298, 27)
         Me.TextBoxEmail.TabIndex = 9
         '
@@ -352,7 +353,6 @@ Partial Class StudentInfoForm
         Me.TextBoxEname.Font = New System.Drawing.Font("Tahoma", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxEname.Location = New System.Drawing.Point(241, 288)
         Me.TextBoxEname.Name = "TextBoxEname"
-        Me.TextBoxEname.ReadOnly = True
         Me.TextBoxEname.Size = New System.Drawing.Size(298, 36)
         Me.TextBoxEname.TabIndex = 13
         '
@@ -626,11 +626,12 @@ Partial Class StudentInfoForm
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "First Name"
         '
-        'Guna2BorderlessForm1
+        'MySqlCommand1
         '
-        Me.Guna2BorderlessForm1.ContainerControl = Me
-        Me.Guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6R
-        Me.Guna2BorderlessForm1.TransparentWhileDrag = True
+        Me.MySqlCommand1.CacheAge = 0
+        Me.MySqlCommand1.Connection = Nothing
+        Me.MySqlCommand1.EnableCaching = False
+        Me.MySqlCommand1.Transaction = Nothing
         '
         'StudentInfoForm
         '
@@ -708,4 +709,5 @@ Partial Class StudentInfoForm
     Friend WithEvents TextBoxID As TextBox
     Friend WithEvents Label20 As Label
     Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
+    Friend WithEvents MySqlCommand1 As MySql.Data.MySqlClient.MySqlCommand
 End Class

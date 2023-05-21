@@ -121,6 +121,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\StudentIEnrollForm.Designer.vb">
+      <DependentUpon>StudentIEnrollForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StudentIEnrollForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\StudentIGradesForm.Designer.vb">
       <DependentUpon>StudentIGradesForm.vb</DependentUpon>
     </Compile>
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StudentIEnrollForm.resx">
+      <DependentUpon>StudentIEnrollForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\StudentIGradesForm.resx">
       <DependentUpon>StudentIGradesForm.vb</DependentUpon>
