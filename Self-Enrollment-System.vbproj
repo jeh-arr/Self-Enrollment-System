@@ -133,6 +133,7 @@
     <Compile Include="Forms\StudentIGradesForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Modules\Functions.vb" />
     <Compile Include="Modules\DataBaseConnection.vb" />
     <Compile Include="Forms\LoginForm.Designer.vb">
       <DependentUpon>LoginForm.vb</DependentUpon>
