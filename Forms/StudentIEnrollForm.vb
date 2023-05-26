@@ -44,15 +44,16 @@
             MsgBox("Please select a subject")
         ElseIf SelectedSlot >= 50 Then
             MsgBox("Selected subject is already full")
-        ElseIf CheckTotal(TotalUnit, dgvEnlisted) >= 7 Then
+        ElseIf CheckTotal(TotalUnit, dgvEnlisted) >= 27 Then
             MsgBox("Exceeds total units allowed")
         ElseIf CheckGrade(SelectedTitle) Then
             MsgBox("Selected subject is already completed")
-        ElseIf Not CheckReq(SelectedTitle, Label2) Then
+        ElseIf Not CheckReq(SelectedTitle) Then
             MsgBox("Prerequisite have not been met")
         ElseIf CheckDuplicate(SelectedTitle, dgvEnlisted) Then
-            MsgBox("Selected subject is already in Enlisted subject")
-
+            MsgBox("Selected subject is already in Enlisted subjects")
+        ElseIf CheckTime(SelectedCode, dgvEnlisted) Then
+            MsgBox("Selected subject conflicting error in Enlisted subjects")
 
         Else
             query = "SELECT * FROM subjsched WHERE code = '" + SelectedCode + "'"
@@ -76,6 +77,7 @@
             SelectedCode = selectedRow.Cells("DataGridViewTextBoxColumn10").Value.ToString()
             SelectedTitle = selectedRow.Cells("DataGridViewTextBoxColumn11").Value.ToString()
             SelectedSlot = selectedRow.Cells("DataGridViewTextBoxColumn18").Value
+
         End If
 
 
