@@ -47,6 +47,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
       <HintPath>packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
@@ -127,6 +130,12 @@
     <Compile Include="Forms\StudentIEnrollForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\StudentScheduleForm.Designer.vb">
+      <DependentUpon>StudentScheduleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StudentScheduleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\StudentIGradesForm.Designer.vb">
       <DependentUpon>StudentIGradesForm.vb</DependentUpon>
     </Compile>
@@ -182,6 +191,9 @@
     <EmbeddedResource Include="Forms\StudentIEnrollForm.resx">
       <DependentUpon>StudentIEnrollForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StudentScheduleForm.resx">
+      <DependentUpon>StudentScheduleForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\StudentIGradesForm.resx">
       <DependentUpon>StudentIGradesForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +208,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -209,6 +222,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Resources\" />
     <Folder Include="Src\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
