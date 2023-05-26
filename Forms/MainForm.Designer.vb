@@ -22,6 +22,7 @@ Partial Class Main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
@@ -39,12 +40,14 @@ Partial Class Main
         Me.ButtonLogout = New Guna.UI2.WinForms.Guna2Button()
         Me.LabelIdNumber = New System.Windows.Forms.Label()
         Me.LabelFullName = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.TableLayoutPanel6.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
+        Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -67,7 +70,7 @@ Partial Class Main
         '
         'TableLayoutPanel2
         '
-        Me.TableLayoutPanel2.BackgroundImage = Global.Self_Enrollment_System.My.Resources.Resources.mainbg2
+        Me.TableLayoutPanel2.BackgroundImage = CType(resources.GetObject("TableLayoutPanel2.BackgroundImage"), System.Drawing.Image)
         Me.TableLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.TableLayoutPanel2.ColumnCount = 1
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
@@ -143,7 +146,7 @@ Partial Class Main
         '
         Me.Label3.AutoSize = True
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label3.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(3, 220)
         Me.Label3.Name = "Label3"
         Me.Label3.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -172,7 +175,7 @@ Partial Class Main
         '
         Me.Label2.AutoSize = True
         Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label2.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(3, 220)
         Me.Label2.Name = "Label2"
         Me.Label2.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -243,7 +246,7 @@ Partial Class Main
         Me.ButtonInfo.CheckedState.ImageSize = New System.Drawing.Size(64, 64)
         Me.ButtonInfo.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ButtonInfo.HoverState.ImageSize = New System.Drawing.Size(180, 180)
-        Me.ButtonInfo.Image = Global.Self_Enrollment_System.My.Resources.Resources.infoiconlarge
+        Me.ButtonInfo.Image = CType(resources.GetObject("ButtonInfo.Image"), System.Drawing.Image)
         Me.ButtonInfo.ImageOffset = New System.Drawing.Point(0, 0)
         Me.ButtonInfo.ImageRotate = 0!
         Me.ButtonInfo.ImageSize = New System.Drawing.Size(170, 170)
@@ -259,7 +262,7 @@ Partial Class Main
         '
         Me.Label1.AutoSize = True
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label1.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(3, 220)
         Me.Label1.Name = "Label1"
         Me.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -271,6 +274,7 @@ Partial Class Main
         'Guna2Panel1
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.Maroon
+        Me.Guna2Panel1.Controls.Add(Me.Label4)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 809)
         Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(0)
@@ -298,13 +302,13 @@ Partial Class Main
         Me.ButtonLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.ButtonLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.ButtonLogout.FillColor = System.Drawing.Color.Maroon
-        Me.ButtonLogout.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonLogout.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonLogout.ForeColor = System.Drawing.Color.White
-        Me.ButtonLogout.Location = New System.Drawing.Point(1412, 12)
+        Me.ButtonLogout.Location = New System.Drawing.Point(1477, 12)
         Me.ButtonLogout.Name = "ButtonLogout"
-        Me.ButtonLogout.Size = New System.Drawing.Size(180, 45)
+        Me.ButtonLogout.Size = New System.Drawing.Size(115, 30)
         Me.ButtonLogout.TabIndex = 2
-        Me.ButtonLogout.Text = "Logout"
+        Me.ButtonLogout.Text = "LOGOUT"
         '
         'LabelIdNumber
         '
@@ -328,6 +332,21 @@ Partial Class Main
         Me.LabelFullName.TabIndex = 0
         Me.LabelFullName.Text = "LastName, FirstName"
         '
+        'Label4
+        '
+        Me.Label4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(458, 26)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(449, 23)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Developed by: Sandoval, Eryilmaz, and Onggo"
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -350,6 +369,8 @@ Partial Class Main
         Me.TableLayoutPanel5.PerformLayout()
         Me.TableLayoutPanel4.ResumeLayout(False)
         Me.TableLayoutPanel4.PerformLayout()
+        Me.Guna2Panel1.ResumeLayout(False)
+        Me.Guna2Panel1.PerformLayout()
         Me.Guna2Panel2.ResumeLayout(False)
         Me.Guna2Panel2.PerformLayout()
         Me.ResumeLayout(False)
@@ -373,4 +394,5 @@ Partial Class Main
     Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
     Friend WithEvents Label2 As Label
     Friend WithEvents ButtonGrades As Guna.UI2.WinForms.Guna2ImageButton
+    Friend WithEvents Label4 As Label
 End Class

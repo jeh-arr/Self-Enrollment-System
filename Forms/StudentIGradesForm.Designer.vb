@@ -67,11 +67,11 @@ Partial Class StudentGradesForm
         Me.ButtonBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.ButtonBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.ButtonBack.FillColor = System.Drawing.Color.Maroon
-        Me.ButtonBack.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonBack.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonBack.ForeColor = System.Drawing.Color.White
         Me.ButtonBack.Location = New System.Drawing.Point(1479, 11)
         Me.ButtonBack.Name = "ButtonBack"
-        Me.ButtonBack.Size = New System.Drawing.Size(115, 29)
+        Me.ButtonBack.Size = New System.Drawing.Size(115, 30)
         Me.ButtonBack.TabIndex = 1
         Me.ButtonBack.Text = "BACK"
         '
@@ -96,7 +96,7 @@ Partial Class StudentGradesForm
         '
         Me.Guna2PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2PictureBox1.BorderRadius = 45
-        Me.Guna2PictureBox1.Image = Global.Self_Enrollment_System.My.Resources.Resources.gradeiconsmall1
+        Me.Guna2PictureBox1.Image = Global.Self_Enrollment_System.My.Resources.Resources.gradeiconsmall
         Me.Guna2PictureBox1.ImageRotate = 0!
         Me.Guna2PictureBox1.Location = New System.Drawing.Point(12, 12)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
@@ -110,7 +110,7 @@ Partial Class StudentGradesForm
         Me.Guna2Panel2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2Panel2.BackgroundImage = Global.Self_Enrollment_System.My.Resources.Resources.studentinfobg
+        Me.Guna2Panel2.BackgroundImage = Global.Self_Enrollment_System.My.Resources.Resources.gradebg
         Me.Guna2Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Guna2Panel2.Controls.Add(Me.MainPanel)
         Me.Guna2Panel2.Location = New System.Drawing.Point(1, 75)

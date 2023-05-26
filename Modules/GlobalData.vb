@@ -1,3 +1,3 @@
 ﻿Module GlobalData
-    Public StudentID As String = 100004
+    Public StudentID As String
 End Module

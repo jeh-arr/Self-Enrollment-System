@@ -27,7 +27,7 @@ Partial Class StudentInfoForm
         Me.ButtonBack = New Guna.UI2.WinForms.Guna2Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
-        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.MySqlCommand1 = New MySql.Data.MySqlClient.MySqlCommand()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.MainPanel = New Guna.UI2.WinForms.Guna2Panel()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
@@ -71,14 +71,14 @@ Partial Class StudentInfoForm
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBoxFname = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.MySqlCommand1 = New MySql.Data.MySqlClient.MySqlCommand()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel1.SuspendLayout()
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel2.SuspendLayout()
         Me.MainPanel.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2Panel1
@@ -125,18 +125,12 @@ Partial Class StudentInfoForm
         Me.Guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6R
         Me.Guna2BorderlessForm1.TransparentWhileDrag = True
         '
-        'Guna2PictureBox1
+        'MySqlCommand1
         '
-        Me.Guna2PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2PictureBox1.BorderRadius = 45
-        Me.Guna2PictureBox1.Image = Global.Self_Enrollment_System.My.Resources.Resources.infoiconsmall
-        Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(12, 12)
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(157, 151)
-        Me.Guna2PictureBox1.TabIndex = 3
-        Me.Guna2PictureBox1.TabStop = False
-        Me.Guna2PictureBox1.UseTransparentBackground = True
+        Me.MySqlCommand1.CacheAge = 0
+        Me.MySqlCommand1.Connection = Nothing
+        Me.MySqlCommand1.EnableCaching = False
+        Me.MySqlCommand1.Transaction = Nothing
         '
         'Guna2Panel2
         '
@@ -626,12 +620,18 @@ Partial Class StudentInfoForm
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "First Name"
         '
-        'MySqlCommand1
+        'Guna2PictureBox1
         '
-        Me.MySqlCommand1.CacheAge = 0
-        Me.MySqlCommand1.Connection = Nothing
-        Me.MySqlCommand1.EnableCaching = False
-        Me.MySqlCommand1.Transaction = Nothing
+        Me.Guna2PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2PictureBox1.BorderRadius = 45
+        Me.Guna2PictureBox1.Image = Global.Self_Enrollment_System.My.Resources.Resources.infoiconsmall
+        Me.Guna2PictureBox1.ImageRotate = 0!
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(157, 151)
+        Me.Guna2PictureBox1.TabIndex = 3
+        Me.Guna2PictureBox1.TabStop = False
+        Me.Guna2PictureBox1.UseTransparentBackground = True
         '
         'StudentInfoForm
         '
@@ -648,7 +648,6 @@ Partial Class StudentInfoForm
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel2.ResumeLayout(False)
         Me.MainPanel.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
@@ -657,6 +656,7 @@ Partial Class StudentInfoForm
         Me.GroupBox2.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

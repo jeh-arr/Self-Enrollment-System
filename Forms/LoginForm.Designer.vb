@@ -23,6 +23,7 @@ Partial Class LoginForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LoginForm))
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.ButtonLogin = New Guna.UI2.WinForms.Guna2Button()
         Me.TextBoxPassword = New Guna.UI2.WinForms.Guna2TextBox()
@@ -138,7 +139,7 @@ Partial Class LoginForm
         '
         Me.Guna2PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2PictureBox1.BackgroundImage = Global.Self_Enrollment_System.My.Resources.Resources.umlogo
+        Me.Guna2PictureBox1.BackgroundImage = CType(resources.GetObject("Guna2PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.Guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Guna2PictureBox1.FillColor = System.Drawing.Color.Transparent
         Me.Guna2PictureBox1.ImageRotate = 0!
@@ -161,7 +162,7 @@ Partial Class LoginForm
         '
         'PanelBackGround
         '
-        Me.PanelBackGround.BackgroundImage = Global.Self_Enrollment_System.My.Resources.Resources.login_bg1
+        Me.PanelBackGround.BackgroundImage = Global.Self_Enrollment_System.My.Resources.Resources.login_bg5
         Me.PanelBackGround.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PanelBackGround.Controls.Add(Me.Guna2GroupBox1)
         Me.PanelBackGround.Controls.Add(Me.Label1)
