@@ -2,6 +2,10 @@
 
 Module Functions
 
+
+
+
+
     'fill subject list table
     Sub FillTable(qry As String, dgvlist As DataGridView)
         Connect()
@@ -13,6 +17,48 @@ Module Functions
         While reader.Read
             dgvlist.Rows.Add(reader(0), reader(1), reader(2), reader(3), reader(4) + "-" + reader(5), reader(7), reader(8), reader(9), reader(10))
         End While
+    End Sub
+
+
+    '"SELECT code, title, descript, term, timestart, timeend, day, room, unit FROM stdenroll, subjsched WHERE subjsched.code = stdenroll.subjid AND stdenroll.stdid = '"+user+"'";
+    Sub FillTableGrade(qry As String, dgvlist As DataGridView)
+        Connect()
+        With command
+            .CommandText = qry
+            .Connection = connection
+            reader = .ExecuteReader
+        End With
+        While reader.Read
+            dgvlist.Rows.Add(reader(0), reader(1), reader(2), reader(3))
+        End While
+    End Sub
+
+    Sub ShowRecommended(dgvlist As DataGridView)
+        Connect()
+        Dim rectitlelist As List(Of String) = New List(Of String)()
+        Dim titlelist As List(Of String) = New List(Of String)()
+        With command
+            .CommandText = "SELECT * FROM subjsched"
+            .Connection = connection
+            reader = .ExecuteReader
+        End With
+
+
+        While reader.Read
+            titlelist.Add(reader(1))
+        End While
+
+        For Each j In titlelist
+            If CheckReq(j) Then
+                rectitlelist.Add(j)
+            End If
+        Next j
+
+        For Each i In rectitlelist
+            query = "SELECT * FROM subjsched WHERE title = '" + i + "'"
+            FillTable(query, dgvlist)
+        Next i
+
     End Sub
 
     'checks requisite subject if passed

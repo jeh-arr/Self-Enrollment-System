@@ -16,7 +16,7 @@
     Private Sub ButtonSearch_Click(sender As Object, e As EventArgs) Handles ButtonSearch.Click
 
         Dim subj As String = TextBoxSearch.Text.ToUpper.Trim
-        dgvSubjectlist.Rows.Clear()
+        'dgvSubjectlist.Rows.Clear()
         query = "SELECT * FROM subjsched WHERE code = '" + subj + "' OR title LIKE '%" + subj + "%'"
         FillTable(query, dgvSubjectlist)
 
@@ -25,8 +25,10 @@
     'show recommended subjects
     Private Sub ButtonRecommend_Click(sender As Object, e As EventArgs) Handles ButtonRecommend.Click
         dgvSubjectlist.Rows.Clear()
-        query = ""
-        FillTable(query, dgvSubjectlist)
+
+        ShowRecommended(dgvSubjectlist)
+
+
     End Sub
 
     'show all subjects

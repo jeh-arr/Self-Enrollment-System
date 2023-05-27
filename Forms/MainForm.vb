@@ -4,14 +4,14 @@
     Private Sub ButtonInfo_Click(sender As Object, e As EventArgs) Handles ButtonInfo.Click
         StudentInfoForm.Show()
         Me.Close()
-
-
     End Sub
     Private Sub ButtonGrades_Click(sender As Object, e As EventArgs) Handles ButtonGrades.Click
         StudentGradesForm.Show()
+        Me.Close()
     End Sub
     Private Sub ButtonEnroll_Click(sender As Object, e As EventArgs) Handles ButtonEnroll.Click
-
+        StudentEnrollForm.Show()
+        Me.Close()
     End Sub
     Private Sub ButtonLogout_Click(sender As Object, e As EventArgs) Handles ButtonLogout.Click
         LoginForm.Show()
@@ -24,9 +24,7 @@
 
 
         TableLayoutPanel3.BackColor = Color.FromArgb(200, 255, 255, 255)
-
         Connect()
-
         query = "SELECT CONCAT(Lastname,', ',Firstname) as full_name from stdinfo where ID = @studentid"
 
         With command

@@ -72,6 +72,7 @@ Partial Class StudentInfoForm
         Me.TextBoxFname = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.ButtonCancel = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
         Me.MainPanel.SuspendLayout()
@@ -83,14 +84,14 @@ Partial Class StudentInfoForm
         '
         'Guna2Panel1
         '
-        Me.Guna2Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Guna2Panel1.BackColor = System.Drawing.Color.Maroon
         Me.Guna2Panel1.Controls.Add(Me.ButtonBack)
         Me.Guna2Panel1.Controls.Add(Me.Label1)
-        Me.Guna2Panel1.Location = New System.Drawing.Point(-2, 1)
+        Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(1607, 75)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(1604, 75)
         Me.Guna2Panel1.TabIndex = 0
         '
         'ButtonBack
@@ -139,9 +140,9 @@ Partial Class StudentInfoForm
         Me.Guna2Panel2.BackgroundImage = Global.Self_Enrollment_System.My.Resources.Resources.studentinfobg
         Me.Guna2Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Guna2Panel2.Controls.Add(Me.MainPanel)
-        Me.Guna2Panel2.Location = New System.Drawing.Point(1, 72)
+        Me.Guna2Panel2.Location = New System.Drawing.Point(1, 47)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(1604, 810)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(1604, 835)
         Me.Guna2Panel2.TabIndex = 2
         '
         'MainPanel
@@ -153,7 +154,7 @@ Partial Class StudentInfoForm
         Me.MainPanel.Controls.Add(Me.GroupBox1)
         Me.MainPanel.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MainPanel.ForeColor = System.Drawing.Color.White
-        Me.MainPanel.Location = New System.Drawing.Point(160, 129)
+        Me.MainPanel.Location = New System.Drawing.Point(160, 141)
         Me.MainPanel.Name = "MainPanel"
         Me.MainPanel.Size = New System.Drawing.Size(1292, 625)
         Me.MainPanel.TabIndex = 0
@@ -161,6 +162,7 @@ Partial Class StudentInfoForm
         'GroupBox3
         '
         Me.GroupBox3.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox3.Controls.Add(Me.ButtonCancel)
         Me.GroupBox3.Controls.Add(Me.ButtonEdit)
         Me.GroupBox3.Controls.Add(Me.Label16)
         Me.GroupBox3.Controls.Add(Me.TextBoxEaddress)
@@ -633,6 +635,21 @@ Partial Class StudentInfoForm
         Me.Guna2PictureBox1.TabStop = False
         Me.Guna2PictureBox1.UseTransparentBackground = True
         '
+        'ButtonCancel
+        '
+        Me.ButtonCancel.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.ButtonCancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.ButtonCancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.ButtonCancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.ButtonCancel.FillColor = System.Drawing.Color.Maroon
+        Me.ButtonCancel.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonCancel.ForeColor = System.Drawing.Color.White
+        Me.ButtonCancel.Location = New System.Drawing.Point(277, 500)
+        Me.ButtonCancel.Name = "ButtonCancel"
+        Me.ButtonCancel.Size = New System.Drawing.Size(128, 45)
+        Me.ButtonCancel.TabIndex = 23
+        Me.ButtonCancel.Text = "Cancel"
+        '
         'StudentInfoForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -710,4 +727,5 @@ Partial Class StudentInfoForm
     Friend WithEvents Label20 As Label
     Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
     Friend WithEvents MySqlCommand1 As MySql.Data.MySqlClient.MySqlCommand
+    Friend WithEvents ButtonCancel As Guna.UI2.WinForms.Guna2Button
 End Class
