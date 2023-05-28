@@ -122,6 +122,7 @@ Partial Class Main
         Me.TableLayoutPanel6.RowCount = 2
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.0!))
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel6.Size = New System.Drawing.Size(443, 275)
         Me.TableLayoutPanel6.TabIndex = 1
         '
@@ -130,7 +131,6 @@ Partial Class Main
         Me.ButtonEnroll.BackColor = System.Drawing.Color.Transparent
         Me.ButtonEnroll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ButtonEnroll.CheckedState.ImageSize = New System.Drawing.Size(64, 64)
-        Me.ButtonEnroll.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ButtonEnroll.HoverState.ImageSize = New System.Drawing.Size(180, 180)
         Me.ButtonEnroll.Image = Global.Self_Enrollment_System.My.Resources.Resources.enrolliconlarge
         Me.ButtonEnroll.ImageOffset = New System.Drawing.Point(0, 0)

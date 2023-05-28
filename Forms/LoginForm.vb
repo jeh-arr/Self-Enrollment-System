@@ -24,6 +24,7 @@ Public Class LoginForm
 
 
             GlobalData.StudentID = TextBoxIdNumber.Text.Trim
+            GlobalData.Enrolled = CInt(reader(3))
             TextBoxIdNumber.Clear()
             TextBoxPassword.Clear()
             Main.Show()

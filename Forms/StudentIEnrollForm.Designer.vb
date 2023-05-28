@@ -23,14 +23,14 @@ Partial Class StudentEnrollForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.ButtonBack = New Guna.UI2.WinForms.Guna2Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -38,6 +38,7 @@ Partial Class StudentEnrollForm
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.MainPanel = New Guna.UI2.WinForms.Guna2Panel()
+        Me.ButtonRecommend = New Guna.UI2.WinForms.Guna2Button()
         Me.TotalUnit = New System.Windows.Forms.Label()
         Me.ButtonClear = New Guna.UI2.WinForms.Guna2Button()
         Me.dgvEnlisted = New Guna.UI2.WinForms.Guna2DataGridView()
@@ -65,7 +66,6 @@ Partial Class StudentEnrollForm
         Me.ButtonRemove = New Guna.UI2.WinForms.Guna2Button()
         Me.ButtonAdd = New Guna.UI2.WinForms.Guna2Button()
         Me.ButtonShowAll = New Guna.UI2.WinForms.Guna2Button()
-        Me.ButtonRecommend = New Guna.UI2.WinForms.Guna2Button()
         Me.ButtonSearch = New Guna.UI2.WinForms.Guna2Button()
         Me.TextBoxSearch = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -153,6 +153,7 @@ Partial Class StudentEnrollForm
         Me.MainPanel.AutoScroll = True
         Me.MainPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.MainPanel.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.MainPanel.Controls.Add(Me.ButtonRecommend)
         Me.MainPanel.Controls.Add(Me.TotalUnit)
         Me.MainPanel.Controls.Add(Me.ButtonClear)
         Me.MainPanel.Controls.Add(Me.dgvEnlisted)
@@ -162,7 +163,6 @@ Partial Class StudentEnrollForm
         Me.MainPanel.Controls.Add(Me.ButtonRemove)
         Me.MainPanel.Controls.Add(Me.ButtonAdd)
         Me.MainPanel.Controls.Add(Me.ButtonShowAll)
-        Me.MainPanel.Controls.Add(Me.ButtonRecommend)
         Me.MainPanel.Controls.Add(Me.ButtonSearch)
         Me.MainPanel.Controls.Add(Me.TextBoxSearch)
         Me.MainPanel.Controls.Add(Me.Label2)
@@ -173,16 +173,33 @@ Partial Class StudentEnrollForm
         Me.MainPanel.Size = New System.Drawing.Size(1278, 696)
         Me.MainPanel.TabIndex = 0
         '
+        'ButtonRecommend
+        '
+        Me.ButtonRecommend.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.ButtonRecommend.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.ButtonRecommend.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.ButtonRecommend.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.ButtonRecommend.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.ButtonRecommend.FillColor = System.Drawing.Color.Gold
+        Me.ButtonRecommend.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonRecommend.ForeColor = System.Drawing.Color.Black
+        Me.ButtonRecommend.Location = New System.Drawing.Point(918, 17)
+        Me.ButtonRecommend.Name = "ButtonRecommend"
+        Me.ButtonRecommend.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.ButtonRecommend.Size = New System.Drawing.Size(139, 36)
+        Me.ButtonRecommend.TabIndex = 17
+        Me.ButtonRecommend.Text = "Recommend"
+        '
         'TotalUnit
         '
         Me.TotalUnit.AutoSize = True
         Me.TotalUnit.BackColor = System.Drawing.Color.Transparent
-        Me.TotalUnit.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TotalUnit.Location = New System.Drawing.Point(346, 354)
+        Me.TotalUnit.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TotalUnit.Location = New System.Drawing.Point(868, 642)
         Me.TotalUnit.Name = "TotalUnit"
-        Me.TotalUnit.Size = New System.Drawing.Size(179, 33)
+        Me.TotalUnit.Size = New System.Drawing.Size(159, 25)
         Me.TotalUnit.TabIndex = 16
-        Me.TotalUnit.Text = "Total Units = "
+        Me.TotalUnit.Text = "Total Units =  0"
         '
         'ButtonClear
         '
@@ -193,9 +210,10 @@ Partial Class StudentEnrollForm
         Me.ButtonClear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.ButtonClear.FillColor = System.Drawing.Color.Gold
         Me.ButtonClear.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonClear.ForeColor = System.Drawing.Color.DimGray
+        Me.ButtonClear.ForeColor = System.Drawing.Color.Black
         Me.ButtonClear.Location = New System.Drawing.Point(243, 636)
         Me.ButtonClear.Name = "ButtonClear"
+        Me.ButtonClear.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.ButtonClear.Size = New System.Drawing.Size(139, 36)
         Me.ButtonClear.TabIndex = 15
         Me.ButtonClear.Text = "Clear"
@@ -203,46 +221,46 @@ Partial Class StudentEnrollForm
         'dgvEnlisted
         '
         Me.dgvEnlisted.AllowUserToResizeRows = False
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(253, Byte), Integer), CType(CType(230, Byte), Integer))
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black
-        Me.dgvEnlisted.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(253, Byte), Integer), CType(CType(230, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black
+        Me.dgvEnlisted.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvEnlisted.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvEnlisted.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvEnlisted.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvEnlisted.ColumnHeadersHeight = 25
         Me.dgvEnlisted.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.dgvEnlisted.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9})
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvEnlisted.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvEnlisted.DefaultCellStyle = DataGridViewCellStyle3
         Me.dgvEnlisted.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.dgvEnlisted.Location = New System.Drawing.Point(64, 407)
         Me.dgvEnlisted.MultiSelect = False
         Me.dgvEnlisted.Name = "dgvEnlisted"
         Me.dgvEnlisted.ReadOnly = True
         Me.dgvEnlisted.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvEnlisted.RowHeadersDefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvEnlisted.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.dgvEnlisted.RowHeadersVisible = False
         Me.dgvEnlisted.RowTemplate.Height = 23
         Me.dgvEnlisted.Size = New System.Drawing.Size(1148, 206)
@@ -343,46 +361,46 @@ Partial Class StudentEnrollForm
         'dgvSubjectlist
         '
         Me.dgvSubjectlist.AllowUserToResizeRows = False
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(253, Byte), Integer), CType(CType(230, Byte), Integer))
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black
-        Me.dgvSubjectlist.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(253, Byte), Integer), CType(CType(230, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black
+        Me.dgvSubjectlist.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
         Me.dgvSubjectlist.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle14.BackColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvSubjectlist.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvSubjectlist.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.dgvSubjectlist.ColumnHeadersHeight = 25
         Me.dgvSubjectlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.dgvSubjectlist.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18})
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvSubjectlist.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvSubjectlist.DefaultCellStyle = DataGridViewCellStyle7
         Me.dgvSubjectlist.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.dgvSubjectlist.Location = New System.Drawing.Point(64, 72)
         Me.dgvSubjectlist.MultiSelect = False
         Me.dgvSubjectlist.Name = "dgvSubjectlist"
         Me.dgvSubjectlist.ReadOnly = True
         Me.dgvSubjectlist.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle16.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle16.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvSubjectlist.RowHeadersDefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvSubjectlist.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
         Me.dgvSubjectlist.RowHeadersVisible = False
         Me.dgvSubjectlist.RowTemplate.Height = 23
         Me.dgvSubjectlist.Size = New System.Drawing.Size(1148, 206)
@@ -500,9 +518,10 @@ Partial Class StudentEnrollForm
         Me.ButtonEnroll.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.ButtonEnroll.FillColor = System.Drawing.Color.Orange
         Me.ButtonEnroll.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonEnroll.ForeColor = System.Drawing.Color.DimGray
-        Me.ButtonEnroll.Location = New System.Drawing.Point(419, 636)
+        Me.ButtonEnroll.ForeColor = System.Drawing.Color.Black
+        Me.ButtonEnroll.Location = New System.Drawing.Point(1073, 636)
         Me.ButtonEnroll.Name = "ButtonEnroll"
+        Me.ButtonEnroll.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.ButtonEnroll.Size = New System.Drawing.Size(139, 36)
         Me.ButtonEnroll.TabIndex = 10
         Me.ButtonEnroll.Text = "Enroll"
@@ -516,9 +535,10 @@ Partial Class StudentEnrollForm
         Me.ButtonRemove.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.ButtonRemove.FillColor = System.Drawing.Color.Gold
         Me.ButtonRemove.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonRemove.ForeColor = System.Drawing.Color.DimGray
-        Me.ButtonRemove.Location = New System.Drawing.Point(64, 633)
+        Me.ButtonRemove.ForeColor = System.Drawing.Color.Black
+        Me.ButtonRemove.Location = New System.Drawing.Point(64, 636)
         Me.ButtonRemove.Name = "ButtonRemove"
+        Me.ButtonRemove.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.ButtonRemove.Size = New System.Drawing.Size(139, 36)
         Me.ButtonRemove.TabIndex = 9
         Me.ButtonRemove.Text = "Remove"
@@ -532,9 +552,10 @@ Partial Class StudentEnrollForm
         Me.ButtonAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.ButtonAdd.FillColor = System.Drawing.Color.Gold
         Me.ButtonAdd.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonAdd.ForeColor = System.Drawing.Color.DimGray
+        Me.ButtonAdd.ForeColor = System.Drawing.Color.Black
         Me.ButtonAdd.Location = New System.Drawing.Point(64, 298)
         Me.ButtonAdd.Name = "ButtonAdd"
+        Me.ButtonAdd.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.ButtonAdd.Size = New System.Drawing.Size(139, 36)
         Me.ButtonAdd.TabIndex = 8
         Me.ButtonAdd.Text = "Add"
@@ -548,28 +569,13 @@ Partial Class StudentEnrollForm
         Me.ButtonShowAll.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.ButtonShowAll.FillColor = System.Drawing.Color.Gold
         Me.ButtonShowAll.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonShowAll.ForeColor = System.Drawing.Color.DimGray
-        Me.ButtonShowAll.Location = New System.Drawing.Point(1075, 17)
+        Me.ButtonShowAll.ForeColor = System.Drawing.Color.Black
+        Me.ButtonShowAll.Location = New System.Drawing.Point(1073, 17)
         Me.ButtonShowAll.Name = "ButtonShowAll"
+        Me.ButtonShowAll.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.ButtonShowAll.Size = New System.Drawing.Size(139, 36)
         Me.ButtonShowAll.TabIndex = 7
         Me.ButtonShowAll.Text = "Show All"
-        '
-        'ButtonRecommend
-        '
-        Me.ButtonRecommend.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.ButtonRecommend.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.ButtonRecommend.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.ButtonRecommend.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.ButtonRecommend.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.ButtonRecommend.FillColor = System.Drawing.Color.Gold
-        Me.ButtonRecommend.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonRecommend.ForeColor = System.Drawing.Color.DimGray
-        Me.ButtonRecommend.Location = New System.Drawing.Point(919, 17)
-        Me.ButtonRecommend.Name = "ButtonRecommend"
-        Me.ButtonRecommend.Size = New System.Drawing.Size(139, 36)
-        Me.ButtonRecommend.TabIndex = 6
-        Me.ButtonRecommend.Text = "Recommended"
         '
         'ButtonSearch
         '
@@ -580,9 +586,10 @@ Partial Class StudentEnrollForm
         Me.ButtonSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.ButtonSearch.FillColor = System.Drawing.Color.Gold
         Me.ButtonSearch.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonSearch.ForeColor = System.Drawing.Color.DimGray
+        Me.ButtonSearch.ForeColor = System.Drawing.Color.Black
         Me.ButtonSearch.Location = New System.Drawing.Point(762, 17)
         Me.ButtonSearch.Name = "ButtonSearch"
+        Me.ButtonSearch.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.ButtonSearch.Size = New System.Drawing.Size(139, 36)
         Me.ButtonSearch.TabIndex = 2
         Me.ButtonSearch.Text = "Search"
@@ -597,14 +604,15 @@ Partial Class StudentEnrollForm
         Me.TextBoxSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.TextBoxSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.TextBoxSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBoxSearch.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.TextBoxSearch.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBoxSearch.Location = New System.Drawing.Point(378, 17)
+        Me.TextBoxSearch.Location = New System.Drawing.Point(462, 17)
+        Me.TextBoxSearch.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TextBoxSearch.Name = "TextBoxSearch"
         Me.TextBoxSearch.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TextBoxSearch.PlaceholderText = "Search code or title..."
         Me.TextBoxSearch.SelectedText = ""
-        Me.TextBoxSearch.Size = New System.Drawing.Size(347, 36)
+        Me.TextBoxSearch.Size = New System.Drawing.Size(263, 36)
         Me.TextBoxSearch.TabIndex = 1
         '
         'Label2
@@ -657,7 +665,6 @@ Partial Class StudentEnrollForm
     Friend WithEvents ButtonEnroll As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents ButtonRemove As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents ButtonAdd As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents ButtonRecommend As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents ButtonShowAll As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents dgvSubjectlist As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
@@ -681,4 +688,5 @@ Partial Class StudentEnrollForm
     Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
     Friend WithEvents TotalUnit As Label
+    Friend WithEvents ButtonRecommend As Guna.UI2.WinForms.Guna2Button
 End Class

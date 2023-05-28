@@ -10,7 +10,16 @@
         Me.Close()
     End Sub
     Private Sub ButtonEnroll_Click(sender As Object, e As EventArgs) Handles ButtonEnroll.Click
-        StudentEnrollForm.Show()
+        If GlobalData.Enrolled = 1 Then
+            StudentScheduleForm.Show()
+        Else
+            StudentEnrollForm.Show()
+        End If
+
+        Me.Close()
+    End Sub
+    Private Sub ButtonForm1_Click(sender As Object, e As EventArgs)
+        StudentScheduleForm.Show()
         Me.Close()
     End Sub
     Private Sub ButtonLogout_Click(sender As Object, e As EventArgs) Handles ButtonLogout.Click
@@ -41,7 +50,10 @@
             End If
         End With
 
-
+        If GlobalData.Enrolled = 1 Then
+            ButtonEnroll.Image = My.Resources.Resources.form1iconlarge
+            Label3.Text = "Form 1"
+        End If
 
     End Sub
 

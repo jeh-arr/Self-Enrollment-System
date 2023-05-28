@@ -16,19 +16,18 @@
     Private Sub ButtonSearch_Click(sender As Object, e As EventArgs) Handles ButtonSearch.Click
 
         Dim subj As String = TextBoxSearch.Text.ToUpper.Trim
-        'dgvSubjectlist.Rows.Clear()
+        dgvSubjectlist.Rows.Clear()
         query = "SELECT * FROM subjsched WHERE code = '" + subj + "' OR title LIKE '%" + subj + "%'"
         FillTable(query, dgvSubjectlist)
 
     End Sub
 
     'show recommended subjects
+
     Private Sub ButtonRecommend_Click(sender As Object, e As EventArgs) Handles ButtonRecommend.Click
         dgvSubjectlist.Rows.Clear()
 
         ShowRecommended(dgvSubjectlist)
-
-
     End Sub
 
     'show all subjects
@@ -55,7 +54,7 @@
         ElseIf CheckDuplicate(SelectedTitle, dgvEnlisted) Then
             MsgBox("Selected subject is already in Enlisted subjects")
         ElseIf CheckTime(SelectedCode, dgvEnlisted) Then
-            MsgBox("Selected subject conflicting error in Enlisted subjects")
+            MsgBox("Selected subject conflicting schedule in Enlisted subjects")
 
         Else
             query = "SELECT * FROM subjsched WHERE code = '" + SelectedCode + "'"
@@ -102,6 +101,29 @@
 
     'enroll all subject in dgvEnlisted 
     Private Sub ButtonEnroll_Click(sender As Object, e As EventArgs) Handles ButtonEnroll.Click
+        If dgvEnlisted.Rows.Count = 1 Then
+            MsgBox("Please select subjects to be enrolled")
+        Else
+            Dim result As DialogResult = MessageBox.Show("Are you sure to enroll enlisted subject?", "Confirm Enrollment?", MessageBoxButtons.YesNo)
 
+            If (result = DialogResult.Yes) Then
+
+                Enroll(dgvEnlisted)
+                MsgBox("You are now successfully enrolled")
+                SetEnrolled()
+                StudentScheduleForm.Show()
+                Me.Close()
+            Else
+
+            End If
+
+        End If
     End Sub
+
+    Private Sub ButtonBack_Click(sender As Object, e As EventArgs) Handles ButtonBack.Click
+        Main.Show()
+        Me.Close()
+    End Sub
+
+
 End Class
